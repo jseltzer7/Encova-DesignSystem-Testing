@@ -21,6 +21,9 @@ function App() {
         </a>
       </header> */}
       <encova-button text="Test"></encova-button>
+      <br></br>
+      <hr></hr>
+      <encova-form></encova-form>
     </div>
   );
 }
