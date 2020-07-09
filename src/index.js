@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { applyPolyfills, defineCustomElements } from 'encova-button-stencil-component/loader';
+var Promise = require('es6-promise').polyfill();
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +13,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-//registerServiceWorker();
+serviceWorker.register();
 
 applyPolyfills().then(() => {
   defineCustomElements(window);
