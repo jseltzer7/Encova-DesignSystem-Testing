@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <encova-button text="Test"></encova-button>
+      <encova-button text="Test" message="Alert Text"></encova-button>
       <br></br>
       <hr></hr>
       <encova-form></encova-form>
